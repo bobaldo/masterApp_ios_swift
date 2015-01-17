@@ -13,6 +13,7 @@
 		B511A4FB1A680C7B00C8F313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B511A4FA1A680C7B00C8F313 /* Images.xcassets */; };
 		B511A4FE1A680C7B00C8F313 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B511A4FC1A680C7B00C8F313 /* LaunchScreen.xib */; };
 		B511A50A1A680C7B00C8F313 /* calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511A5091A680C7B00C8F313 /* calcTests.swift */; };
+		B51890D11A6A82F90081C4C0 /* StoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51890D01A6A82F90081C4C0 /* StoricoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B511A5031A680C7B00C8F313 /* calcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B511A5081A680C7B00C8F313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B511A5091A680C7B00C8F313 /* calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcTests.swift; sourceTree = "<group>"; };
+		B51890D01A6A82F90081C4C0 /* StoricoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoricoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				B511A4FA1A680C7B00C8F313 /* Images.xcassets */,
 				B511A4FC1A680C7B00C8F313 /* LaunchScreen.xib */,
 				B511A4F11A680C7B00C8F313 /* Supporting Files */,
+				B51890D01A6A82F90081C4C0 /* StoricoController.swift */,
 			);
 			path = calc;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B511A4F61A680C7B00C8F313 /* ViewController.swift in Sources */,
+				B51890D11A6A82F90081C4C0 /* StoricoController.swift in Sources */,
 				B511A4F41A680C7B00C8F313 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "calc/calc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -347,9 +354,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "calc/calc-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -407,6 +416,7 @@
 				B511A50F1A680C7B00C8F313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B511A5101A680C7B00C8F313 /* Build configuration list for PBXNativeTarget "calcTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +425,7 @@
 				B511A5121A680C7B00C8F313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
