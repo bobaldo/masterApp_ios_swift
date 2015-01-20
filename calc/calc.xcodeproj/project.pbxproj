@@ -14,6 +14,7 @@
 		B511A4FE1A680C7B00C8F313 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B511A4FC1A680C7B00C8F313 /* LaunchScreen.xib */; };
 		B511A50A1A680C7B00C8F313 /* calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511A5091A680C7B00C8F313 /* calcTests.swift */; };
 		B51890D11A6A82F90081C4C0 /* StoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51890D01A6A82F90081C4C0 /* StoricoController.swift */; };
+		B5BA510B1A6EB97000B9C600 /* Storico.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA510A1A6EB97000B9C600 /* Storico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B511A5081A680C7B00C8F313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B511A5091A680C7B00C8F313 /* calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcTests.swift; sourceTree = "<group>"; };
 		B51890D01A6A82F90081C4C0 /* StoricoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoricoController.swift; sourceTree = "<group>"; };
+		B5BA510A1A6EB97000B9C600 /* Storico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B511A4FC1A680C7B00C8F313 /* LaunchScreen.xib */,
 				B511A4F11A680C7B00C8F313 /* Supporting Files */,
 				B51890D01A6A82F90081C4C0 /* StoricoController.swift */,
+				B5BA510A1A6EB97000B9C600 /* Storico.swift */,
 			);
 			path = calc;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				B511A4F61A680C7B00C8F313 /* ViewController.swift in Sources */,
 				B51890D11A6A82F90081C4C0 /* StoricoController.swift in Sources */,
 				B511A4F41A680C7B00C8F313 /* AppDelegate.swift in Sources */,
+				B5BA510B1A6EB97000B9C600 /* Storico.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

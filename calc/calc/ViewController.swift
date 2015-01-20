@@ -10,8 +10,9 @@ import UIKit;
 
 class ViewController: UIViewController {
 
-    var pNumero = ""
-    var sNumero = ""
+    var history : [Storico] = []
+    var pNumero = "0"
+    var sNumero = "0"
     var hasNumber = false
     var hasOperation = false
     var op = ""
@@ -28,8 +29,8 @@ class ViewController: UIViewController {
     }
 
     func initializer(){
-        pNumero = ""
-        sNumero = ""
+        pNumero = "0"
+        sNumero = "0"
         hasNumber = false
         hasOperation = false
         op = ""
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
     
     func append(add: String, isOperation: Bool){
         if(isOperation){
-            if(pNumero.isEmpty){
+            if(pNumero == "0"){
                 if(txtRisultato.text!.toInt() == 0){
                     return
                 }else{
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
                 hasOperation = true
                 hasNumber = true
                 op=add;
-            }else if(hasOperation && !pNumero.isEmpty && !sNumero.isEmpty){
+            }else if(hasOperation && pNumero != "0" && sNumero != "0"){
                 calcola()
                 txtOperazioni.text = txtRisultato.text
                 pNumero = txtRisultato.text!
@@ -65,9 +66,17 @@ class ViewController: UIViewController {
             }
         }else{
             if(hasNumber){
-                sNumero += add;
+                if(sNumero == "0" && add == "0"){
+                    return
+                }else{
+                    sNumero += add;
+                }
             }else{
-                pNumero += add;
+                if(pNumero == "0" && add == "0" ){
+                    return
+                }else{
+                    pNumero += add;
+                }
             }
         }
         txtOperazioni.text = txtOperazioni.text! + add;
@@ -90,10 +99,12 @@ class ViewController: UIViewController {
             self.txtRisultato.text = "0"
         }
         
-        //TODO: introdurre lo storico
+        var item = Storico(pNumero: pNumero, sNumero: pNumero, op: op);
+        history .append(item)
+        
         txtOperazioni.text = ""
-        pNumero = ""
-        sNumero = ""
+        pNumero = "0"
+        sNumero = "0"
         hasNumber = false
         hasOperation = false
 
