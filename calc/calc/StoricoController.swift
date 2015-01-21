@@ -8,17 +8,14 @@
 
 import UIKit;
 
-class StoricoController: UIViewController {
-
+class StoricoController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var listStorico: UITableView!
+    var history : [Storico] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var data:NSMutableArray = ["a","b","c"]
-        
-      //  listStorico.load = data
-        
+        self.listStorico.delegate = self;
+        self.listStorico.dataSource = self;
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,15 +23,22 @@ class StoricoController: UIViewController {
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0;
+        return 1;
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0;
+        return history.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let simpleTableIdentifier = "use";
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier(simpleTableIdentifier) as? UITableViewCell
+        if cell == nil {
+           cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: simpleTableIdentifier)
+        }
+        
+        cell!.textLabel!.text = String(self.history[indexPath.row].primoNumero) + " " + self.history[indexPath.row].operazione + " " + String(self.history[indexPath.row].secondoNumero)
+        return cell!;
     }
-
 }

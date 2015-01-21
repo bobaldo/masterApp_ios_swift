@@ -10,7 +10,7 @@ import UIKit;
 
 class ViewController: UIViewController {
 
-    var history : [Storico] = []
+    var lHistory : [Storico] = []
     var pNumero = "0"
     var sNumero = "0"
     var hasNumber = false
@@ -99,8 +99,8 @@ class ViewController: UIViewController {
             self.txtRisultato.text = "0"
         }
         
-        var item = Storico(pNumero: pNumero, sNumero: pNumero, op: op);
-        history .append(item)
+        var item = Storico(pNumero: pNumero, sNumero: sNumero, op: op);
+        lHistory .append(item)
         
         txtOperazioni.text = ""
         pNumero = "0"
@@ -108,6 +108,13 @@ class ViewController: UIViewController {
         hasNumber = false
         hasOperation = false
 
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "StoricoSegue"{
+            ((segue.destinationViewController) as StoricoController).history = lHistory
+        }
     }
     
     @IBAction func btnUguale(sender: AnyObject) {

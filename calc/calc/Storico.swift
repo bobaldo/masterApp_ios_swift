@@ -10,12 +10,12 @@ import Foundation
 
 class Storico{
     init(pNumero: String, sNumero: String, op: String) {
-        self.primoNumero = pNumero
-        self.secondoNumero = sNumero
+        self.primoNumero = pNumero.toInt()!
+        self.secondoNumero = sNumero.toInt()!
         self.operazione = op
     }
     
-    var primoNumero = ""
-    var secondoNumero = ""
+    var primoNumero = 0
+    var secondoNumero = 0
     var operazione = ""
 }

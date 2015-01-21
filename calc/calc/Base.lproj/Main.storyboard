@@ -168,7 +168,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PD4-sU-qBY">
                                 <rect key="frame" x="306" y="573" width="51" height="31"/>
                                 <connections>
-                                    <segue destination="z77-0V-jaJ" kind="show" id="IXj-N1-diR"/>
+                                    <segue destination="z77-0V-jaJ" kind="show" identifier="StoricoSegue" id="dqs-3K-DIa"/>
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x17-eJ-gkJ">
@@ -248,7 +248,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-t3-FqP">
-                                <rect key="frame" x="0.0" y="52" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-8" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="z77-0V-jaJ" id="GHk-fb-Ioo"/>
@@ -258,13 +258,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="listStorico" destination="Bcf-t3-FqP" id="AOv-S9-z9o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3W-z1-L9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637" y="1206"/>
+            <point key="canvasLocation" x="839" y="1009"/>
         </scene>
     </scenes>
 </document>
