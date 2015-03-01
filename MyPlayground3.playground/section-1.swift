@@ -2,4 +2,8 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var a = 2
+var b = 0
+var p = a &/ b
+var f = a * b
+

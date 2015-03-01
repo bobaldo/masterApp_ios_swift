@@ -13,6 +13,7 @@
 		B51FADF41A7BA99C00BF0F65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51FADF31A7BA99C00BF0F65 /* Images.xcassets */; };
 		B51FADF71A7BA99C00BF0F65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51FADF51A7BA99C00BF0F65 /* LaunchScreen.xib */; };
 		B51FAE031A7BA99C00BF0F65 /* locationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FAE021A7BA99C00BF0F65 /* locationTests.swift */; };
+		B51FAE0D1A7BA9B300BF0F65 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51FAE0C1A7BA9B300BF0F65 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B51FADFC1A7BA99C00BF0F65 /* locationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51FAE011A7BA99C00BF0F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51FAE021A7BA99C00BF0F65 /* locationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationTests.swift; sourceTree = "<group>"; };
+		B51FAE0C1A7BA9B300BF0F65 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FAE0D1A7BA9B300BF0F65 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		B51FADDE1A7BA99C00BF0F65 = {
 			isa = PBXGroup;
 			children = (
+				B51FAE0C1A7BA9B300BF0F65 /* CoreLocation.framework */,
 				B51FADE91A7BA99C00BF0F65 /* location */,
 				B51FADFF1A7BA99C00BF0F65 /* locationTests */,
 				B51FADE81A7BA99C00BF0F65 /* Products */,
@@ -161,6 +165,11 @@
 				TargetAttributes = {
 					B51FADE61A7BA99C00BF0F65 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					B51FADFB1A7BA99C00BF0F65 = {
 						CreatedOnToolsVersion = 6.1.1;

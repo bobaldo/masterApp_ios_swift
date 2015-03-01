@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51FADDD1A7B810800BF0F65 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51FADDC1A7B810800BF0F65 /* CoreMotion.framework */; };
 		B5CB6BDE1A7B809600C63703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB6BDD1A7B809600C63703 /* AppDelegate.swift */; };
 		B5CB6BE01A7B809600C63703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB6BDF1A7B809600C63703 /* ViewController.swift */; };
 		B5CB6BE31A7B809600C63703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CB6BE11A7B809600C63703 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51FADDC1A7B810800BF0F65 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B5CB6BD81A7B809600C63703 /* motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CB6BDC1A7B809600C63703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CB6BDD1A7B809600C63703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FADDD1A7B810800BF0F65 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		B5CB6BCF1A7B809500C63703 = {
 			isa = PBXGroup;
 			children = (
+				B51FADDC1A7B810800BF0F65 /* CoreMotion.framework */,
 				B5CB6BDA1A7B809600C63703 /* motion */,
 				B5CB6BF01A7B809600C63703 /* motionTests */,
 				B5CB6BD91A7B809600C63703 /* Products */,
@@ -405,6 +409,7 @@
 				B5CB6BF91A7B809600C63703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5CB6BFA1A7B809600C63703 /* Build configuration list for PBXNativeTarget "motionTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				B5CB6BFC1A7B809600C63703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
